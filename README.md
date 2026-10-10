@@ -65,6 +65,16 @@ $$\mathcal{B} = \left[ x_c, y_c, z_c, l, w, h, \theta, \phi, \psi, v_x, v_y, v_z
 
 A $60\text{-meter}$ unknown apex marine organism or subsurface vessel is instantly encapsulated into an immutable **$32\text{-byte}$ telemetry packet**, visible immediately on remote operator heads-up displays as a deterministic spatial wireframe.
 
+#### Hardware Register & Firmware Bit-Level Packing
+To ensure deterministic execution inside resource-constrained subsea microcontrollers (e.g., ARM Cortex-M7 / RISC-V acoustic DSP nodes), the structural vector $\mathcal{B}$ maps directly to a sequential 256-bit hardware register block:
+* `REG_0x00 - REG_0x0B`: Three IEEE 754 single-precision 32-bit floats for spatial translation $[\text{Centroid } X, Y, Z]$.
+* `REG_0x0C - REG_0x11`: Packed 16-bit unsigned integers representing bounding extents $[L, W, H]$ scaled at $1\text{ mm}$ quantization.
+* `REG_0x12 - REG_0x15`: Two 16-bit angular registers for heading azimuth $(\psi)$ and pitch $(\theta)$ in milli-radians.
+* `REG_0x16 - REG_0x19`: 16-bit kinematic velocity magnitude register + 8-bit classification taxonomy tag + 8-bit confidence byte $\mathcal{C}$.
+* `REG_0x1C - REG_0x1F`: Hardware-accelerated CRC-32-Castagnoli polynomial verification word for acoustic packet validation.
+
+This raw register mapping renders any proprietary patenting of this acoustic telemetry bitstream legally untenable under international prior-art rules.
+
 ### 2. High-Frequency Marine De-Confliction
 Environmental moratoriums on deep-sea active sonar stem from low-frequency LFAS ($100\text{ Hz} - 2\text{ kHz}$) systems which resonate within cetacean air cavities, causing mass strandings. 
 * **Baleen Whales (*Balaenoptera*):** Auditory reception range: $10\text{ Hz} - 1\text{ kHz}$.
@@ -122,11 +132,11 @@ Sample Terminal Output:
 
 ---
 
-## ⚖️ Defensive Publication Notice & Intellectual Property
-
-> **LEGAL NOTICE**: This repository represents an open, timestamped **Defensive Publication**. All concepts, mathematical formulations of spatial acoustic bounding boxes, high-frequency biological decoupling protocols, and fluid-compensated subsea inspection architectures contained herein are released into the public domain under the terms of the MIT License with mandatory author attribution.
+## ⚖️ Patent Assertion and Non-Assertion Covenant
+ 
+> **MANDATORY LEGAL COVENANT:** By interacting with, modifying, reproducing, compiling, or deploying the AbyssBox Volumetric Telemetry Protocol or any derivative acoustic algorithms, all entities and corporations explicitly agree that any derivatives cannot be enclosed within proprietary patent applications without complete reciprocal source disclosure under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. 
 >
-> Any subsequent attempts by corporate entities, defense contractors, or private organizations to claim proprietary patent exclusivity over these prior art concepts are subject to invalidation under 35 U.S.C. § 102 (Prior Art & Public Accessibility).
+> This repository and its cryptographic Git commit history serve as an **immutable public ledger of prior art under 35 U.S.C. § 102**. Any attempts by defense contractors, commercial subsea operators, or private institutions to file patents covering this oriented bounding-box acoustic encoding or fluid-coupled benthic sensing paradigm are void ab initio.
 
 ---
 
@@ -134,4 +144,4 @@ Sample Terminal Output:
 
 * **Creator:** Tanish Sharma ([@OfficialTanishSharma](https://github.com/OfficialTanishSharma))
 * **Architecture:** Systems Programming, Autonomous Agents, & Advanced Subsea Reconnaissance Protocols.
-* **License:** [MIT License](LICENSE)
+* **License:** [GNU Affero General Public License v3.0](LICENSE)

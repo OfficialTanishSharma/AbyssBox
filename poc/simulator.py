@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Tanish Sharma (@OfficialTanishSharma). All rights reserved.
+# Licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
+# AbyssBox: Volumetric Subsea Telemetry and OBB Acoustic Framing.
 """
 AbyssBox :: Reference Proof-of-Concept Simulator (v1.0.0)
 Author: Tanish Sharma (@OfficialTanishSharma)
