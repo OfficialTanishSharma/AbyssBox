@@ -1,9 +1,10 @@
 # AbyssBox: Open Acoustic Bounding-Box & Deep-Ocean Volumetric SLAM Protocol
 
 [![Specification: Active](https://img.shields.io/badge/Spec-v1.0.0--Draft-00f2fe?style=flat-square&logo=gitbook)](specification/SPEC-01-ACOUSTIC-HITBOX.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-success?style=flat-square)](LICENSE)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue?style=flat-square)](LICENSE)
+[![Patent Armor: Section 11 Protected](https://img.shields.io/badge/Patent_Armor-Explicit_Grant_Section_11-darkred?style=flat-square)](LICENSE)
 [![Prior Art: Defensive Publication](https://img.shields.io/badge/Prior_Art-Timestamped_Defensive_Record-red?style=flat-square)](https://github.com/OfficialTanishSharma/AbyssBox)
-[![Architecture: DARPA / Navy-Grade Open Spec](https://img.shields.io/badge/Class-Autonomous_Subsea_Recon-yellow?style=flat-square)](#system-architecture)
+[![Defense Interop: DARPA POSYDON / US Navy Compatible](https://img.shields.io/badge/Interop-DARPA_POSYDON_/_US_Navy_Acoustic_Grid-yellow?style=flat-square)](#system-architecture)
 
 > **"We have millimeter-precision topological radars of the Martian highlands and Lunar craters, yet 95% of Earth's benthic hydrosphere remains in absolute sensory blackout."**
 
