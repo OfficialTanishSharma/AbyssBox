@@ -1,8 +1,8 @@
 # AbyssBox: Open Acoustic Bounding-Box & Deep-Ocean Volumetric SLAM Protocol
 
-[![Specification: Active](https://img.shields.io/badge/Spec-v1.0.0--Draft-00f2fe?style=flat-square&logo=gitbook)](https://github.com/OfficialTanishSharma/AbyssBox/blob/main/specification/SPEC-01-ACOUSTIC-HITBOX.md)
-[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue?style=flat-square)](https://github.com/OfficialTanishSharma/AbyssBox/blob/main/LICENSE)
-[![Patent Armor: Section 11 Protected](https://img.shields.io/badge/Patent_Armor-Explicit_Grant_Section_11-darkred?style=flat-square)](https://github.com/OfficialTanishSharma/AbyssBox/blob/main/LICENSE)
+[![Specification: Active](https://img.shields.io/badge/Spec-v1.0.0--Draft-00f2fe?style=flat-square&logo=gitbook)](specification/SPEC-01-ACOUSTIC-HITBOX.md)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue?style=flat-square)](LICENSE)
+[![Patent Armor: Section 11 Protected](https://img.shields.io/badge/Patent_Armor-Explicit_Grant_Section_11-darkred?style=flat-square)](LICENSE)
 [![Prior Art: Defensive Publication](https://img.shields.io/badge/Prior_Art-Timestamped_Defensive_Record-red?style=flat-square)](https://github.com/OfficialTanishSharma/AbyssBox)
 [![Defense Interop: DARPA POSYDON / US Navy Compatible](https://img.shields.io/badge/Interop-DARPA_POSYDON_/_US_Navy_Acoustic_Grid-yellow?style=flat-square)](#system-architecture)
 
@@ -144,4 +144,4 @@ Sample Terminal Output:
 
 * **Author:** Tanish Sharma ([@OfficialTanishSharma](https://github.com/OfficialTanishSharma))
 * **Architecture:** Systems Programming, Autonomous Agents, & Subsea SLAM Telemetry.
-* **License:** [GNU Affero General Public License v3.0 (AGPL-3.0)](https://github.com/OfficialTanishSharma/AbyssBox/blob/main/LICENSE)
+* **License:** [GNU Affero General Public License v3.0 (AGPL-3.0)](LICENSE)
