@@ -144,4 +144,4 @@ Sample Terminal Output:
 
 * **Author:** Tanish Sharma ([@OfficialTanishSharma](https://github.com/OfficialTanishSharma))
 * **Architecture:** Systems Programming, Autonomous Agents, & Subsea SLAM Telemetry.
-* **License:** [GNU Affero General Public License v3.0 (AGPL-3.0)](LICENSE)
+* **License:** GNU Affero General Public License v3.0 (AGPL-3.0) — see [`LICENSE`](./LICENSE) file.
